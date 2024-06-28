@@ -1,6 +1,4 @@
 def main():
-    plist = []
-    
     firstnum = int(input('Please input a number: '))
     
     # avoid error if first num is smaller than second
@@ -12,13 +10,16 @@ def main():
             continue
         else:
             break
-        
+    
+    numrange = firstnum - secondnum
+    
     # create list of all number in between the two values(inclusive)
     list = []
-    for i in range(firstnum + 1 - secondnum):
+    for i in range(numrange + 1):
         list.append(secondnum + i)
-    
-    print(list)
+        
+    # cycle through the list to determine which numbers are prime
+    plist = []
 
     return plist
 
