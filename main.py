@@ -12,6 +12,13 @@ def main():
             continue
         else:
             break
+        
+    # create list of all number in between the two values(inclusive)
+    list = []
+    for i in range(firstnum + 1 - secondnum):
+        list.append(secondnum + i)
+    
+    print(list)
 
     return plist
 
