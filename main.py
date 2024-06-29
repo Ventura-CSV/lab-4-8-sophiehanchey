@@ -19,7 +19,7 @@ def main():
             quotient = i/j
             if quotient == int(quotient):
                 prime = False
-        
+    
         if prime:
             plist.append(i)
 
